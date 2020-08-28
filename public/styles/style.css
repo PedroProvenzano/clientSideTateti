@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-size: 3rem;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.uno,.cuatro,.siete{
+    border-right: black 2px solid;
+}
+.tres,.seis,.nueve{
+    border-left: black 2px solid;
+}
+.uno,.dos,.tres{
+    border-bottom: black 2px solid;
+}
+.siete,.ocho,.nueve{
+    border-top: black 2px solid;
+}
+.contenedorTateti{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 20rem;
+    width: 20rem;
+    margin-top: 2rem;
+    align-content: center;
+    text-align: center;
+}
+
+.contenedorJuega{
+    position: relative;
+    left: 0rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+
+#jugadorJuega{
+    margin-left: 4rem;
+}
+.contenedorTateti div{
+    font-size: 4rem;
+}
+#reiniciar{
+    position: relative;    
+    top: 1.5rem;
+    left: 0rem;
+    padding: 0.5rem;
+    border: 2px black solid;
+    font-size: 1.4rem;
+}
+#reiniciar:hover{
+    cursor: pointer;
+}
+#felicitaciones{
+    border: 2px black solid;
+    padding: 2rem;
+    position: absolute;
+    background-color: white;
+    display: none;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 320px){
+    .contenedorJuega{
+        font-size: 1rem;
+        left: -4rem;
+    }
+    #reiniciar{
+        font-size: 1rem;
+        left: 6rem;
+        top: 0.5rem;
+    }
+}
+
